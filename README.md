@@ -29,9 +29,9 @@ minikube dashboard
 
 This project contains a web service coded in Java, but the language doesn't matter. This project has already been built and the binary version is there:
 
-First of all, download and uncompress the project: https://github.com/charroux/kubernetes-minikube
+First of all, download and uncompress the project: https://github.com/roro75hihi/kubernetes-minikube
 
-You can also use git: `git clone https://github.com/charroux/kubernetes-minikube`
+You can also use git: `git clone https://github.com/roro75hihi/kubernetes-minikube`
 
 Then move to the sud directory with `cd kubernetes-minikube/myservice` where a DockerFile is.
 
@@ -106,10 +106,10 @@ Example: `docker push myDockerID/myservice:1`
 kubectl get nodes
 ```
 ```
-kubectl create deployment myservice --image=efrei/myservice:1
+kubectl create deployment myservice --image=roro75hihi/myservice:1
 ```
 
-The image used comes from the Docker hub: https://hub.docker.com/r/efrei/myservice/tags
+The image used comes from the Docker hub: https://hub.docker.com/r/roro75hihi/myservice/tags
 
 But you can use your own image instead.
 
@@ -266,11 +266,11 @@ kubectl rollout undo deployments/my-deployment
 
 Yaml files can be used instead of using the command `kubectl create deployment` and `kubectl expose deployment`
 
-The yaml file for the deployment: https://github.com/charroux/kubernetes-minikube/blob/main/myservice-deployment.yml
+The yaml file for the deployment: https://github.com/roro75hihi/kubernetes-minikube/blob/main/myservice-deployment.yml
 
-The yaml file for the node port service: https://github.com/charroux/kubernetes-minikube/blob/main/myservice-service.yml
+The yaml file for the node port service: https://github.com/roro75hihi/kubernetes-minikube/blob/main/myservice-service.yml
 
-The yaml file for the node port service: https://github.com/charroux/kubernetes-minikube/blob/main/myservice-loadbalancing-service.yml
+The yaml file for the node port service: https://github.com/roro75hihi/kubernetes-minikube/blob/main/myservice-loadbalancing-service.yml
 
 Apply the deployment:
 ```
@@ -314,7 +314,7 @@ Create a Deployment and expose it as a NodePort (not a loadbalancer).
 
 Check if it works.
 
-A yaml file for ingress: https://github.com/charroux/kubernetes-minikube/blob/main/ingress.yml
+A yaml file for ingress: https://github.com/roro75hihi/kubernetes-minikube/blob/main/ingress.yml
 
 ```
 kubectl apply -f ingress.yml
